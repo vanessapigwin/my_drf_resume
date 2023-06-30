@@ -12,4 +12,4 @@ A quick study of API framework using Django REST Framework and PostgreSQL
 ## References used
 * Django REST Framework documentation
 * Django documentation
-* testdriven.io's Dockerizing Django with Postgres, Gunicorn and Nginx (only used partially for Django and Gunicorn)
+* testdriven.io's Dockerizing Django with Postgres, Gunicorn and Nginx (partially for Django and Gunicorn)
