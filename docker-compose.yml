@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  web:
+  web_resume:
     build: ./my_api
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
@@ -10,3 +10,12 @@ services:
       - 8000:8000
     env_file:
       - ./dev.env
+  backend:
+    build: ./react_todo
+    command: python manage.py runserver 0.0.0.0:8001
+    volumes:
+      - ./react_todo/:/usr/src/react_todo/
+    ports:
+      - 8001:8001
+    env_file:
+      - ./dev_react.env
