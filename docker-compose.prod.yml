@@ -3,6 +3,7 @@ version: '3.3'
 services:
   web:
     build: ./my_api
+    restart: unless-stopped
     command: gunicorn my_resume_api.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./my_api/:/usr/src/my_api/
