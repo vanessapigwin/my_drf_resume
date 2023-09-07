@@ -17,4 +17,4 @@ A quick study of API framework using Django REST Framework and PostgreSQL
 * Django-REST Framework basic use (no authentication since it's all gets)
 * Attaching a "legacy database" to django
 * Adding restart policies to containers
-* configuring jenkins hooks and pipelines (WIP)
+* configuring jenkins hooks and pipelines
